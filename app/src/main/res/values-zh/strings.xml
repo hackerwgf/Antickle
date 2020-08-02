@@ -1,0 +1,14 @@
+<resources>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <!-- 'was' means 'wechat_accessibility_service' -->
+    <string name="was_notification_channel_name">运行状态通知</string>
+    <string name="was_notification_title_running">\"拍一拍\"防误触功能已启动</string>
+    <string name="was_notification_title_paused">\"拍一拍\"防误触功能已暂停</string>
+    <string name="was_notification_content_click_to_setting">点击进行设置</string>
+    <string name="was_need_draw_over_and_accessibility">Antickle 需要显示在其他应用上层并开启无障碍服务来实现\"拍一拍\"防误触功能，请点击确定进行设置</string>
+    <string name="was_need_accessibility_almost_done">非常棒！Antickle 还差一步就可以完成设置了，请点击确定开启无障碍服务</string>
+    <string name="was_need_draw_over">Antickle 需要显示在其他应用上层来实现\"拍一拍\"防误触功能，请点击确定进行设置</string>
+    <string name="was_need_accessibility">Antickle 需要开启无障碍服务来实现\"拍一拍\"防误触功能，请点击确定进行设置</string>
+    <string name="was_setting_description">Antickle 需要开启无障碍服务来实现\"拍一拍\"防误触功能</string>
+</resources>

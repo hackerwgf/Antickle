@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <View
+        android:id="@+id/backgroundColorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/theme_color_primary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <FrameLayout
+            android:id="@+id/switcherContainer"
+            android:layout_width="112dp"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            tools:background="#fff">
+
+            <FrameLayout
+                android:id="@+id/switcherView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/background_color">
+
+                <View
+                    android:id="@+id/switcherColorView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha="0" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
