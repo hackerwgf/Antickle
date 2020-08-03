@@ -13,10 +13,24 @@ android {
         versionName "0.1.0"
     }
 
+    signingConfigs {
+        release {
+            def properties = new Properties()
+            properties.load(rootProject.file('local.properties').newDataInputStream())
+            storeFile file(properties.getProperty('KEYSTORE_FILE_NAME'))
+            storePassword properties.getProperty('KEYSTORE_PASSWORD')
+            keyAlias properties.getProperty('KEY_ALIAS')
+            keyPassword properties.getProperty('KEYSTORE_PASSWORD')
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
