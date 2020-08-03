@@ -40,7 +40,7 @@ fun Context.canDrawOverlays(callback: (Boolean) -> Unit) {
                 10,
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY else WindowManager.LayoutParams.TYPE_SYSTEM_ALERT,
                 WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE or WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
-                PixelFormat.OPAQUE
+                PixelFormat.TRANSLUCENT
             )
             try {
                 wm.addView(v, p)
