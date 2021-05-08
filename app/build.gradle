@@ -3,14 +3,14 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     defaultConfig {
         applicationId "astraeus.app.antickle"
         minSdkVersion 21
-        targetSdkVersion 29
-        versionCode 1
-        versionName "0.1.0"
+        targetSdkVersion 30
+        versionCode 2
+        versionName "0.1.1"
     }
 
     signingConfigs {

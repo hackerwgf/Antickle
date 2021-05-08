@@ -53,7 +53,16 @@ class WeChatAccessibilityService : AccessibilityService() {
             type,
             WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
             PixelFormat.TRANSLUCENT
-        ).apply { gravity = Gravity.START or Gravity.TOP }
+        ).apply {
+            gravity = Gravity.START or Gravity.TOP
+            // 取消 WindowManager updateViewLayout 时的动画
+            // https://stackoverflow.com/a/33171254
+            try {
+                val currentFlags = javaClass.getField("privateFlags").get(this) as Int
+                javaClass.getField("privateFlags").set(this, currentFlags or 0x00000040)
+            } catch (ignore: Exception) {
+            }
+        }
     }
 
     private var mFloatViewHasAdd = false
