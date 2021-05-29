@@ -1,4 +1,4 @@
-![banner.png](https://i.loli.net/2020/08/05/t1EocR3QeXk2Ag5.png)
+![banner.png](https://user-images.githubusercontent.com/4903493/120065110-4896a800-c0a2-11eb-8c85-e6adf1ae5fb2.png)
 
 # Antickle
 
